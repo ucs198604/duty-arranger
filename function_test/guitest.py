@@ -125,7 +125,13 @@ def start_arrange():
     #print(f"num={s.get()}")
 start_arrange = tk.Button(window, text='開始排班', command=start_arrange, font=('Arial', 14))
 start_arrange.grid(column=3, row=0, columnspan=2, rowspan=4, sticky=tk.N+tk.S, padx=10, pady=20)
+
+from tkinter import messagebox
+mes = messagebox.Message()
+
 window.mainloop() #進入等待處理物件的狀態
+
+
 
 # LOAD filename and numbers to run
 
